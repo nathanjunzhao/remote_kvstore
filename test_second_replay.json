@@ -1,0 +1,36 @@
+{
+	"name": "test_second_replay",
+	"initial": "kvstore_1.log",
+	"trace": [
+		{
+			"op": "get",
+			"key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae",
+			"value": "test_value",
+			"code": 200
+		},
+		{
+			"op": "get",
+			"key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaf",
+			"value": "",
+			"code": 404
+		},
+		{
+			"op": "get",
+			"key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaag",
+			"value": "",
+			"code": 404
+		},
+		{
+			"op": "get",
+			"key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah",
+			"value": "test_value",
+			"code": 200
+		},
+		{
+			"op": "get",
+			"key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaai",
+			"value": "test_value",
+			"code": 200
+		}
+	]
+}

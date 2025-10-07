@@ -1,0 +1,30 @@
+{
+	"name": "test_replay",
+	"initial": "kvstore_0.log",
+	"trace": [
+		{
+			"op": "get",
+			"key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae",
+			"value": "test_value",
+			"code": 200
+		},
+		{
+			"op": "get",
+			"key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaf",
+			"value": "",
+			"code": 404
+		},
+		{
+			"op": "get",
+			"key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaag",
+			"value": "test_value",
+			"code": 200
+		},
+		{
+			"op": "get",
+			"key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah",
+			"value": "",
+			"code": 404
+		}
+	]
+}

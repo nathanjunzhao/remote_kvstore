@@ -1,0 +1,30 @@
+{
+	"name": "test_overwrite",
+	"initial": "empty.log",
+	"trace": [
+		{
+			"op": "set",
+			"key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay",
+			"value": "test_value",
+			"code": 200
+		},
+		{
+			"op": "get",
+			"key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay",
+			"value": "test_value",
+			"code": 200
+		},
+		{
+			"op": "set",
+			"key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay",
+			"value": "new_test_value",
+			"code": 200
+		},
+		{
+			"op": "get",
+			"key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay",
+			"value": "new_test_value",
+			"code": 200
+		}
+	]
+}
